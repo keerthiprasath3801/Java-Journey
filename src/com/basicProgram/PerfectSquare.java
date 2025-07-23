@@ -23,3 +23,5 @@ public class PerfectSquare {
         System.out.print("The given number is not a perfect square");
     }
 }
+//git pull origin main --rebase
+//git push origin main
