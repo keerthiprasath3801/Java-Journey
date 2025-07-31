@@ -12,7 +12,9 @@ public class fib {
         int count=2;
 
         while(count <=n){
+            System.out.print(" "+ a + " ");
             int temp=b;
+
             b=b+a;
             a=temp;
 
