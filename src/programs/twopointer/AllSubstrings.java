@@ -1,6 +1,6 @@
-package programs.strings;
+package programs.twopointer;
 
-public class Substring {
+public class AllSubstrings{
     public static void main(String[] args) {
         String s = "abc";
         printAllSubstrings(s);
@@ -11,7 +11,11 @@ public class Substring {
 
         for (int start = 0; start < n; start++) {
             for (int end = start; end < n; end++) {
-                System.out.println(s.substring(start, end + 1));
+                // Print substring from start to end
+                for (int k = start; k <= end; k++) {
+                    System.out.print(s.charAt(k));
+                }
+                System.out.println();
             }
         }
     }
