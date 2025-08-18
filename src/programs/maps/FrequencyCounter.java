@@ -13,7 +13,6 @@ public class FrequencyCounter {
             freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
         }
 
-        // Print the frequency of each element
         for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
             System.out.println(entry.getKey() + " -> " + entry.getValue());
         }

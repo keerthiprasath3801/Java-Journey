@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class Subseq {
     public static void main(String[] args) {
-        subseq("","abc");
+        subseqRet("","abc");
+        System.out.println(subseqRet("","abc"));
     }
     /*
     // This recursive function prints all possible subsequences of a given string.
@@ -73,7 +74,7 @@ void sub(String processed, String unprocessed) {
             return list;
         }
         char ch = up.charAt(0);
-        ArrayList<String> left = subseqRet(p + ch, up.substring(1));
+         ArrayList<String> left = subseqRet(p + ch, up.substring(1));
         ArrayList<String> right = subseqRet(p, up.substring(1));
 
         left.addAll(right);
