@@ -6,13 +6,14 @@ public class Palindrome {
         System.out.println(isPalindrome(s));
     }
     static boolean isPalindrome(String s) {
-        int i = 0, j = s.length() - 1;
-        String str=s.toLowerCase();
-        while (i < j) {
-            if (str.charAt(i) != str.charAt(j)) return false;
-            i++; j--;
+        int start = 0;
+        int end = s.length() - 1;
+        String str = s.toLowerCase();
+        while (start < end) {
+            if (str.charAt(start) != str.charAt(end)) return false;
+            start++;
+            end--;
         }
         return true;
     }
-
 }
